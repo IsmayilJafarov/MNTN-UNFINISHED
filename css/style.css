@@ -1,0 +1,519 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+/* ============================================================================= HEADER */
+
+
+.wrapper{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1760px;
+    margin: 0px auto;
+    padding: 0px 20px 0px 20px;
+} 
+
+@media  (max-width : 1675.98px) {
+    [class*="__container"] {
+        max-width: 1367px;
+        padding: 0px 15px 0px 15px;
+    } 
+    .number-top-left{
+        display: none;
+    }
+
+    .img01{
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .text-info{
+        max-width: 90%;
+    }
+    .hiking-essentials-text-info{
+        max-width: 90%;
+    }
+}
+    
+
+@media  (max-width : 1367.98px) {
+    [class*="__container"] {
+        max-width: 1176px;
+        padding: 0px 30px 0px 30px;
+    } 
+    .hiking-essentials-texts {
+        max-width: 50%;
+        margin: 0px 200px 0px 0px;
+        padding-left: 0;
+    }
+
+    .img01{
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+
+}
+    
+@media  (max-width : 1176.98px) {
+    [class*="__container"] {
+        max-width: 986px;
+    } 
+
+    .img01{
+        max-width: 70%;
+        max-height: 70%;
+    }
+
+    .text-info{
+        max-height: 50%;
+    }
+}
+ @media  (max-width : 986.98px) {
+    [class*="__container"] {
+        max-width: 825px;
+    } 
+}
+
+
+/* @media  (max-width : 825.98px)  {
+    [class*="__container"] {
+        max-width: 693px;
+    } 
+} */
+
+
+@media  (max-width : 825.98px)  {
+    [class*="__container"] {
+        max-width: 582px;
+    } 
+}
+@media  (max-width : 582.98px)  {
+    [class*="__container"] {
+        max-width: 360px;
+    } 
+}
+/* @media  (max-width : 533px)  {
+
+} */
+@media  (max-width : 360.98px)  {
+    [class*="__container"] {
+        max-width: 320px;
+    } 
+}
+/* @media  (max-width : 320px)  {
+
+}  */
+
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    
+}
+.header__container {
+    align-items: center;
+    display: flex;
+    min-height: 140px;
+}
+.header__logo {
+    flex: 1 1 auto;
+    display: inline-flex;
+    justify-content: left;
+    align-items: flex-start; 
+
+    color: var(--wei, #ffffff);
+    font-size: 32px;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: capitalize
+}
+.header__menu {
+    flex: 1 1 auto;
+}
+
+.menu__body {
+
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    color: #ffffff;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+font-family: 'Rubik', sans-serif;
+margin: left 35px;
+}
+.menu__link {
+margin: 0px 17px 0px 17px;
+color: #ffffff;
+}
+.header__button {
+    cursor: pointer;
+}
+.button {
+}
+.button_account {
+    color: #ffffff;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+font-family: 'Rubik', sans-serif;
+justify-content: end;
+}
+
+/* ===================================================================  MAIN */
+
+.main{
+    /* flex: 1 1 auto; */
+    display: flex;
+    
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: repeat;
+    /* background-color: darkred; */
+    padding: 0px 0px 370px 0px;
+    
+}
+
+.yellow-line{
+padding: 10px 21px 0px 0px;
+}
+
+.yellow-arrow{
+    padding: 2.2px 21px 0px 0px;
+    cursor: pointer;
+}
+
+.img {
+    z-index: -2;
+    position:absolute;
+    width: 100vw;
+}
+.Gradient {
+    z-index: -2000;
+    
+}
+.Clouds {
+    z-index: -2000;
+    bottom: 20px;
+    
+}
+.Mountains {
+    z-index: -2000;
+    top: 400px;
+}
+.Green-mount{
+    z-index: -2000;
+    top: 703px;
+    
+}
+.hiking-guide {
+}
+.hiking-guide__container {
+    padding-top: 281px;
+    display: flex;
+    width: 950px;
+    flex-direction: column; 
+    
+    
+}
+.text-block {
+}
+.title {
+    color: var(--accent, #FBD784);
+font-size: 18px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 6px;
+text-transform: uppercase; 
+padding: 0px 0px 32px 0px;
+}
+.main-text {
+    color: var(--wei, #ffffff);
+font-size: 76px;
+font-family: 'Noto Serif';
+font-style: normal;
+font-weight: 600;
+line-height: 100px;
+text-transform: capitalize; 
+
+}
+
+.scroll-down{
+    color: #FFF;
+font-size: 18px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+padding: 32px 0px 0px 0px;
+}
+
+.arrow-down{
+    padding: 0px 0px 0px 16px;
+    cursor: pointer;
+}
+
+.background-gradient{
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 25%, #0B1D26 46% );
+}
+
+/* ============================================================ SECTION get-started */
+
+
+.number-top-left{
+    position: relative;
+    top: 120px;
+    right: 174px;
+    color: #FFF;
+    font-family: 'Rubik', sans-serif;
+font-size: 240px;
+font-style: normal;
+font-weight: 700;
+line-height: 240px;
+opacity: 0.10000000149011612;
+}
+
+.main-get-started{
+    justify-content: center;
+}
+
+.get-started {
+    width: 1462px;
+    display: flex;
+}
+.get-started__container {
+    display: flex;
+    flex-direction: row;
+    padding: 370px 229px 0px 229px; 
+    justify-content: center;
+    
+}
+.get-started-text {
+    font-size: 59px; 
+}
+
+.main-text {
+    color: #FFF;
+font-family: 'Rubik', sans-serif; ;
+font-size: 64px;
+font-style: normal;
+font-weight: 600;
+line-height: normal; 
+    
+}
+.text-info {
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    width: 632px;
+}
+
+.hiking-essentials-text-info{
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+    width: 632px;
+}
+
+
+
+.read-more{
+    padding: 27px 0px 0px 0px;
+}
+
+.get-started-texts{
+    width: 61%;
+    padding: 0px 114px 0px 0px;
+}
+
+
+/* ============================================================ SECTION hiking-essentials */
+
+
+.main-hiking-essentials {
+    background: var(--bg, #0B1D26); 
+    justify-content: center;
+}
+.hiking-essentials__container{
+    display: flex;
+    flex-direction: row;
+    padding: 370px 229px 0px 229px; 
+    justify-content: center;
+}
+.hiking-essentials {
+    display: flex;
+}
+.hiking-essentials-texts {
+    width: 61%;
+    padding: 0px 0px 0px 264px;
+}
+
+
+
+.yellow-arrow-facing-left{
+    transform: rotate(180deg);
+    padding: 0px 0px 2.2px 21px;
+    cursor: pointer;
+}
+/* ============================================================ SECTION where-you-go */
+
+.main-where-you-go {
+    justify-content: center;
+    background: var(--bg, #0B1D26); 
+}
+.where-you-go__container {
+    display: flex;
+    flex-direction: row;
+    padding: 370px 229px 0px 229px; 
+    justify-content: center;
+}
+.where-you-go {
+    width: 1462px;
+    display: flex;
+}
+.where-you-go-texts {
+    width: 61%;
+    padding: 0px 114px 0px 0px;
+}
+
+/* ============================================================ FOOTER */
+
+
+.footer {
+    background: var(--bg, #0B1D26); 
+    
+display: inline-flex;
+flex-direction: column;
+align-items: center;
+gap: 200px;
+    
+}
+
+.footer-text{
+    font-family: 'Rubik', sans-serif; 
+    font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+.footer__container {
+    padding: 200px 0px 0px 0px;
+    color:#FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.MNTN-copyright {
+    width: 347px;
+}
+.header__logo {
+    flex: 1 1 auto;
+    display: inline-flex;
+
+    color: var(--wei, #ffffff);
+    font-size: 32px;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: capitalize
+}
+.MoreOnTheBlog {
+    padding: 0px 212px 0px 593px;
+    font-family: 'Rubik', sans-serif; 
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+}
+.footer-h2 {
+    color: var(--accent, #FBD784);
+    font-family: 'Rubik', sans-serif; ;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+}
+.MoreOnMNTN {
+    font-family: 'Rubik', sans-serif; 
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+}
+
+.inner-container{
+display: flex;
+}
+
+.copyright-text{
+    padding: 122px 0px 0px 0px;
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px;
+}
